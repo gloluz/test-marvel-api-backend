@@ -22,8 +22,6 @@ router.get("/characters", async (req, res) => {
   const offset = req.query.offset || 0;
   const search = req.query.nameStartsWith || null;
 
-  console.log("req", req.query);
-
   try {
     if (search) {
       const response = await axios.get(
