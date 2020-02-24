@@ -10,8 +10,6 @@ const server = express();
 // READ
 
 router.get("/characters", async (req, res) => {
-  console.log("coucou");
-
   const publickey = process.env.YOUR_PUBLIC_KEY;
   const privatekey = process.env.YOUR_PRIVATE_KEY;
   const date = new Date();
